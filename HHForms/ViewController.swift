@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showForm(_ sender: Any) {
+        let vc = FormTableViewController(style: .grouped)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
 
